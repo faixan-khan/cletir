@@ -1,0 +1,12 @@
+d_text=768
+d_img=1024
+d_model=1024
+nhead=1
+num_encoder_layers=6
+dim_feedforward=2048
+dropout=0.1
+activation='relu'
+normalize_before=True
+d_model_clip=768
+d_model_dino=1024
+attn_layers=2
