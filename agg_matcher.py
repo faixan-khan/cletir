@@ -18,7 +18,6 @@ class CustomMultiheadAttention(nn.MultiheadAttention):
     def __init__(self, embed_dim, num_heads, batch_first, **kwargs):
         super().__init__(embed_dim, num_heads, batch_first=batch_first, **kwargs)
         
-        # Tie the projection matrices of query and key
         self.in_proj_weight.data[embed_dim:2*embed_dim, :] = self.in_proj_weight.data[:embed_dim, :]
 
     def forward(self, query, key, value, key_padding_mask=None,
