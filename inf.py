@@ -17,13 +17,13 @@ from templates import imagenet_classes
 import argparse
 
 def get_args_parser():
-	parser = argparse.ArgumentParser('CLIP retrieval', add_help=False)
+	parser = argparse.ArgumentParser('CLETIR')
 	parser.add_argument('--model', type=str, choices=['clip', 'eva', 'meta','open', 'sig'], default='clip',help='CLip version')
-	parser.add_argument('--v_model', type=str, choices=['deit','dino'], default='dino',help='CLip version')
-	parser.add_argument('--root_dir', default='./queries/', type=str)
-	parser.add_argument('--seed', default=0, type=int)
-	parser.add_argument('--method', default='', type=str, choices=['', '_classdbr', '_dbr'])
-	parser.add_argument('--model_path', default='model/model.pth', type=str)
+	parser.add_argument('--v_model', type=str, choices=['deit','dino'], default='dino',help='visual encoder version')
+	parser.add_argument('--root_dir', default='./queries/', type=str, help='root directory of the queries')
+	parser.add_argument('--seed', default=0, type=int, help='seed for the random number generator')
+	parser.add_argument('--method', default='', type=str, choices=['', '_classdbr', '_dbr'], help='method to use for the queries')
+	parser.add_argument('--model_path', default='model/model.pth', type=str, help='path to the model')
 	return parser
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
