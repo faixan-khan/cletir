@@ -4,7 +4,7 @@ This repository contains the code for the paper ["Category-level Text-to-Image R
 
 ## Features
 
-Pre-extracted features used in this work can be downloaded from [here]().
+Pre-extracted features used in this work can be downloaded from [here](https://waga.s3.amazonaws.com/queries.zip).
 
 ## Running
 
