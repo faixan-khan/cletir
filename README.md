@@ -1,6 +1,6 @@
 # Category-level Text-to-Image Retrieval Improved: Bridging the Domain Gap with Diffusion Models and Vision Encoders
 
-This repository contains the code for the paper ["Category-level Text-to-Image Retrieval Improved: Bridging the Domain Gap with Diffusion Models and Vision Encoders"]() published at BMVC 2025.
+This repository contains the code for the paper ["Category-level Text-to-Image Retrieval Improved: Bridging the Domain Gap with Diffusion Models and Vision Encoders"](https://arxiv.org/abs/2509.00177v1) published at BMVC 2025.
 
 ## Features
 
